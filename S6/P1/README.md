@@ -44,6 +44,7 @@ The model consists of neurons, weights, activation function and loss function:
 The following steps repeat in a loop:
 
 ### 2-1 Forward Pass (loss calculation)
+Alternate linear summation and non-linear activation to calculate the loss value:
 1. Linear summation
     - h1 = w1 * i1 + w2 * i2
     - h2 = w3 * i1 + w4 * i2
@@ -62,6 +63,8 @@ The following steps repeat in a loop:
     - E_total = E1 + E2 = E
 
 ### 2-2 Backward Pass (gradient calculation)
+Apply the chain rule following the network topology:
+
 1. Weights **after** hidden layer
     - ∂E/∂w5
     - ∂E/∂w6
@@ -77,7 +80,7 @@ The following steps repeat in a loop:
     - ∂E/∂w4
 
 ### 2-3 Parameter Optimization (weight update)
-wn = wn - η * ∂E/∂wn
+wn = wn - η * ∂E/∂wn for all n weights:
 - w1 = w1 - η * ∂E/∂w1
 - w2 = w2 - η * ∂E/∂w2
 - w3 = w3 - η * ∂E/∂w3
