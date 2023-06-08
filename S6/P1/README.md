@@ -3,15 +3,10 @@ Assignment:
 Implement of backpropagation of errors using Excel spreadsheet
 
 Table of Contents:  
-[1. Excel Spreadsheet](#excel)  
-[2. Parts List](#parts)  
-[3. Major Steps](#steps)  
+[1. Parts List](#parts)  
+[2. Major Steps](#steps)  
 
-<a name="excel"/>
-
-## 0. Assignment: Backpropagation of Errors in Excel Spreadsheet
-
-(Please zoom in to read details)
+(Please click to zoom in for details)
 ![backpropagation](https://github.com/woncoh1/era1/assets/12987758/f4baeb34-3c49-429b-9016-3b7c9f27487c)
 
 <a name="parts"/>
