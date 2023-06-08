@@ -1,6 +1,8 @@
 # ERA V1 S6 Part 2: Training a minimal CNN
 > Train a minimal CNN using the MNIST dataset under constraints
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/woncoh1/era1/blob/main/S6/P2/A6.ipynb)
+
 ## Problem
 - Type: classification
 - Task: handwritten digit recognition
