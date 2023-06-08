@@ -1,13 +1,35 @@
 # ERA V1 S6 Part 1: Backpropagation with spreadsheet
 > Implement backpropagation of errors on a small feed-forward network using Excel spreadsheet
 
+Caveats
+- For the sake of brevity, we abbreviate $E_{total}$ as E for the rest of the documentation and the accompanying Excel spreadsheet
+- All of the following expressions are thus identical:
+    - E
+    - $E_{total}$
+    - E1 + E2
+    - Total loss (error)
+
 Questions
 - How does backpropagation work?
 - What is the effect of learning rate on training loss?
 
-Tasks
+Objectives
 - Implement backpropagation in a spreadsheet (i.e. calculate ∂E/∂w for all weights)
-- Plot loss vs epoch curves for various learning rates (η = 0.1, 0.2, 0.5, 0.8, 1.0, 2.0)
+    - ∂E/∂w1
+    - ∂E/∂w2
+    - ∂E/∂w3
+    - ∂E/∂w4
+    - ∂E/∂w5
+    - ∂E/∂w6
+    - ∂E/∂w7
+    - ∂E/∂w8
+- Plot loss vs epoch curves for various learning rates (i.e. calculate E for η = 0.1, 0.2, 0.5, 0.8, 1.0, 2.0)
+    - E(epoch), for all epochs $\in$ [1, 40], η = 0.1
+    - E(epoch), for all epochs $\in$ [1, 40], η = 0.2
+    - E(epoch), for all epochs $\in$ [1, 40], η = 0.5
+    - E(epoch), for all epochs $\in$ [1, 40], η = 0.8
+    - E(epoch), for all epochs $\in$ [1, 40], η = 1.0
+    - E(epoch), for all epochs $\in$ [1, 40], η = 2.0
 
 (Please click to zoom in for details)
 ![backpropagation](https://github.com/woncoh1/era1/assets/12987758/f4baeb34-3c49-429b-9016-3b7c9f27487c)
@@ -19,7 +41,7 @@ The model consists of neurons, weights, activation function and loss function:
 - 3 fully connected layers: input, hidden, output
 - 2 neurons per layer
 - Activation function: [sigmoid function](https://en.wikipedia.org/wiki/Sigmoid_function)
-- Loss function: $${1 \over 2}\sum_{k=1}^n (t_k - p_k)^2$$ where n = number of output neurons, t = target value, p = prediction value of an output neuron
+- Loss function: $${1 \over 2}\sum_{k=1}^n (t_k - p_k)^2$$ where n = total number of output neurons, t = target value, p = prediction value of an output neuron
 
 ### 1-2 Neuron
 - i1, i2: input-layer neurons
