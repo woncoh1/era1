@@ -29,6 +29,21 @@
 - Number of Parameters: 9,768
 - Number of Epochs: 19
 
+## Hyperparameters
+- CenterCrop
+    - size = 22
+    - p = 0.1
+- RandomRotation: degrees = (-15.0, 15.0)
+- DataLoader: batch_size = 128
+- Dropout2d: p = 0
+- SGD
+    - lr = 0.25
+    - momentum = 0.9
+- lr_scheduler.StepLR
+    - step_size = 10
+    - gamma = 0.1
+- Number of training epochs = 19
+
 ## Receptive field
 - r: receptive field size
 - n: channel size
