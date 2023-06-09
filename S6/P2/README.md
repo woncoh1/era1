@@ -99,3 +99,8 @@ Params size (MB): 0.04
 Estimated Total Size (MB): 0.85
 ----------------------------------------------------------------
 ```
+
+# TODO
+- [ ] Plot training and testing loss and accuracy curves
+- [ ] Visualize example predictions
+- [ ] Visualize sample training batch
